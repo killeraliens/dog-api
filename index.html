@@ -12,15 +12,20 @@
 <body>
     <header>
         <form action="get" id="js-get-qty">
-            <label for="qty">Select how many dog images you would like to see</label>
+            <label for="qty">How many random dogs do you want to see?</label>
             <input id="qty" type="number" name="qty" min="1" max="50" value="3" placeholder="23">
             <button type="submit" value="Submit Qty">Submit Qty</button>
         </form>
+        <span>Or..</span>
+        <form action="get" id="js-get-breed">
+            <label for="breed">Get an image of a specific breed</label>
+            <input id="breed" type="text" name="breed" aria-label="breed" placeholder="beagle">
+            <button type="submit">See Breed</button>
+        </form>
     </header>
     <main>
-        <ul id="js-show-listings" class="hidden"></ul>
+        <div id="js-display" class="container"></div>
     </main>
-
 
 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 <script src="./main.js"></script>
